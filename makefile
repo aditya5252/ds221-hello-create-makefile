@@ -1,15 +1,15 @@
-filename: HelloLooped.o
-	g++ HelloLooped.o -o filename
+math: HelloLooped.o
+	g++ HelloLooped.o -o math
 
 HelloLooped.o: HelloLooped.cpp 
 	g++ -c HelloLooped.cpp
 
 clean: 
-	rm -rf filename
+	rm *.o math
 
 # *.o 
 
-
+# rm -rf filename
 
 # filename : HelloWorld.o Loop.o HelloLooped.o
 # 	g++ HelloWorld.o Loop.o HelloLooped.o -o filename
